@@ -1,17 +1,17 @@
 public class Statistics {
-    public String opponent = "";
-    public String minutes = "";
-    public String fgmade = "";
-    public String fgper = "";
-    public String freethrows = "";
-    public String freethrowsPer = "";
-    public String rebounds = "";
-    public String assists = "";
-    public String blocks = "";
-    public String steals = "";
-    public String fouls = "";
-    public String turnovers = "";
-    public String pointsScored = "";
+    public String opponent;
+    public Integer minutes;
+    public String fgmade;
+    public String fgper;
+    public String freeThrows;
+    public String freeThrowsPer;
+    public Integer rebounds;
+    public Integer assists;
+    public Integer blocks;
+    public Integer steals;
+    public Integer fouls;
+    public Integer turnovers;
+    public Integer pointsScored;
 
     @Override
     public String toString() {
@@ -19,8 +19,8 @@ public class Statistics {
                 minutes + ',' +
                 fgmade + ',' +
                 fgper + ',' +
-                freethrows + ',' +
-                freethrowsPer + ',' +
+                freeThrows + ',' +
+                freeThrowsPer + ',' +
                 rebounds + ',' +
                 assists + ',' +
                 blocks + ',' +
@@ -30,3 +30,4 @@ public class Statistics {
                 pointsScored + '\n';
     }
 }
+
