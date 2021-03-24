@@ -1,8 +1,8 @@
+import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.IOException;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class Leb {
 
-    private static ArrayList<Statistics> matchStatistics = new ArrayList<Statistics>();
+    public static ArrayList<Statistics> matchStatistics = new ArrayList<Statistics>();
 
     public static void main(String[] args) {
 
@@ -92,5 +92,8 @@ public class Leb {
         } catch (IOException e){
             e.printStackTrace();
         }
+
+        Connection conn = Zadanko.JDBC.createConnection();
+
     }
 }
